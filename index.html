@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firza Scripting Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #4b5563 0%, #1f2937 100%);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .text-neon {
+            text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+        }
+        .btn-neon {
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-neon:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        header {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent);
+            backdrop-filter: blur(6px);
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        p, a {
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="py-12 text-center fixed w-full top-0 z-5">
+        <h1 class="text-3xl md:text-4xl font-bold text-neon animate-fade-in">Firza Scripting Service</h1>
+        <p class="mt-3 text-lg text-gray-300 animate-fade-in">5+ Years Scripting Experience</p>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto px-6 pt-28">
+        <section id="about" class="my-16 animate-fade-in">
+            <h2 class="text-2xl md:text-3xl text-neon mb-6">Tentang Saya</h2>
+            <div class="card p-8">
+                <p class="text-gray-100">
+                    Halo! Saya adalah Roblox Game Developer dengan spesialisasi dibidang Scripting, Saya Experienced Scripting dengan pengalaman selama 5+ Tahun dibidang itu, Saya juga merupakan bagian dari Nusantara Expedition Studio, Saya sudah terbiasa dengan Datastore roblox diantaranya Default Roblox Datastore, Datastore2, ProfileService. Saya juga familliar dengan Roleplay System seperti Job System, Currency System, Hunger & Thirst System [GUI Integrated], dan masih banyak lagi.
+                </p>
+            </div>
+        </section>
+
+        <section id="pastwork" class="my-16">
+            <h2 class="text-2xl md:text-3xl text-neon mb-6">Portofolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project 1: INDOLANDS</h3>
+                    <p class="text-gray-200 mt-3">Indolands merupakan project game yang mengusung tema Roleplay yang didalamnya terdapat Currency System, Job System, Faction System dan masih banyak lagi.</p>
+                    <a href="[Link ke game di Roblox]" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project 2: MotionIME x Tenxi</h3>
+                    <p class="text-gray-200 mt-3">Konser game untuk Perform Tenxi di Roblox, Didalamnya terdapat Quest System, Leveling & Exp System, Hunger & Thirst System, Overhead System, VIP System dan masih banyak lagi.</p>
+                    <a href="[Link ke game di Roblox]" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
+                <!-- Tambahkan lebih banyak kartu portofolio di sini -->
+            </div>
+        </section>
+
+        <section id="contact" class="my-16 animate-fade-in">
+            <h2 class="text-2xl md:text-3xl text-neon mb-6">Hubungi Saya</h2>
+            <div class="card p-8 flex flex-col items-center gap-6">
+                <a href="mailto:[email Anda]" class="text-white hover:text-gray-300 text-neon">Email: firzarevansya@gmail.com</a>
+                <a href="[link GitHub Anda]" class="text-white hover:text-gray-300 text-neon">GitHub: ZNXAL</a>
+                <a href="[link Discord atau username]" class="text-white hover:text-gray-300 text-neon">Discord: @Valoentot</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 text-center text-gray-400 bg-transparent">
+        <p>&copy; 2025 Firza. Dibuat dengan sebungkus marlong dan secangkir kopi gula aren.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animasi saat scroll untuk visibilitas kartu
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.card').forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    card.classList.add('animate-fade-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
