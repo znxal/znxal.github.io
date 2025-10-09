@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firza Scripting Service</title>
+    <title>Portfolio Roblox Game Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(135deg, #4b5563 0%, #1f2937 100%);
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
+            position: relative;
+        }
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
         .card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -26,7 +36,10 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         .text-neon {
-            text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+        }
+        .text-secondary {
+            color: #d1d5db;
         }
         .btn-neon {
             background-color: transparent;
@@ -37,8 +50,8 @@
             transition: all 0.3s ease;
         }
         .btn-neon:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
         .animate-fade-in {
             animation: fadeIn 1s ease-in-out;
@@ -56,21 +69,22 @@
         }
         p, a {
             font-weight: 300;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
-    <header class="py-12 text-center fixed w-full top-0 z-5">
-        <h1 class="text-3xl md:text-4xl font-bold text-neon animate-fade-in">Firza Scripting Service</h1>
-        <p class="mt-3 text-lg text-gray-300 animate-fade-in">5+ Years Scripting Experience</p>
+    <div id="particles-js"></div>
+    <header class="py-12 text-center fixed w-full top-0 z-7">
+        <h1 class="text-3xl md:text-4xl font-bold text-neon animate-fade-in">Portfolio Firza</h1>
+        <p class="mt-3 text-lg text-secondary animate-fade-in">Firza Scripting Service with 5+ Years Experience.</p>
     </header>
 
     <main class="flex-1 max-w-5xl mx-auto px-6 pt-28">
         <section id="about" class="my-16 animate-fade-in">
             <h2 class="text-2xl md:text-3xl text-neon mb-6">Tentang Saya</h2>
             <div class="card p-8">
-                <p class="text-gray-100">
+                <p class="text-secondary">
                     Halo! Saya adalah Roblox Game Developer dengan spesialisasi dibidang Scripting, Saya Experienced Scripting dengan pengalaman selama 5+ Tahun dibidang itu, Saya juga merupakan bagian dari Nusantara Expedition Studio, Saya sudah terbiasa dengan Datastore roblox diantaranya Default Roblox Datastore, Datastore2, ProfileService. Saya juga familliar dengan Roleplay System seperti Job System, Currency System, Hunger & Thirst System [GUI Integrated], dan masih banyak lagi.
                 </p>
             </div>
@@ -80,13 +94,13 @@
             <h2 class="text-2xl md:text-3xl text-neon mb-6">Portofolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="card p-8">
-                    <h3 class="text-xl text-white">Project 1: INDOLANDS</h3>
-                    <p class="text-gray-200 mt-3">Indolands merupakan project game yang mengusung tema Roleplay yang didalamnya terdapat Currency System, Job System, Faction System dan masih banyak lagi.</p>
+                    <h3 class="text-xl text-white">Project: Indolands</h3>
+                    <p class="text-secondary mt-3">Indolands merupakan project game yang mengusung tema Roleplay yang didalamnya terdapat Currency System, Job System, Faction System dan masih banyak lagi.</p>
                     <a href="[Link ke game di Roblox]" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
                 </div>
                 <div class="card p-8">
-                    <h3 class="text-xl text-white">Project 2: MotionIME x Tenxi</h3>
-                    <p class="text-gray-200 mt-3">Konser game untuk Perform Tenxi di Roblox, Didalamnya terdapat Quest System, Leveling & Exp System, Hunger & Thirst System, Overhead System, VIP System dan masih banyak lagi.</p>
+                    <h3 class="text-xl text-white">Project: MotionIme x Tenxi</h3>
+                    <p class="text-secondary mt-3">Konser game untuk Perform Tenxi di Roblox, Didalamnya terdapat Quest System, Leveling & Exp System, Hunger & Thirst System, Overhead System, VIP System dan masih banyak lagi.</p>
                     <a href="[Link ke game di Roblox]" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
                 </div>
                 <!-- Tambahkan lebih banyak kartu portofolio di sini -->
@@ -97,17 +111,70 @@
             <h2 class="text-2xl md:text-3xl text-neon mb-6">Hubungi Saya</h2>
             <div class="card p-8 flex flex-col items-center gap-6">
                 <a href="mailto:firzarevansya@gmail.com" class="text-white hover:text-gray-300 text-neon">Email: firzarevansya@gmail.com</a>
-                <a href="#" class="text-white hover:text-gray-300 text-neon">GitHub: ZNXAL</a>
-                <a href="#" class="text-white hover:text-gray-300 text-neon">Discord: @Valoentot</a>
+                <a href="https://github.com/znxal" class="text-white hover:text-gray-300 text-neon">GitHub: znxal</a>
+                <a href="#" class="text-white hover:text-gray-300 text-neon">Discord: @Valoeantot</a>
             </div>
         </section>
     </main>
 
-    <footer class="py-6 text-center text-gray-400 bg-transparent">
+    <footer class="py-6 text-center text-secondary bg-transparent">
         <p>&copy; 2025 Firza. Dibuat dengan sebungkus marlong dan secangkir kopi gula aren.</p>
     </footer>
 
     <script>
+        // Inisialisasi particles.js dengan rotasi 3D lanjutan, gradien, dan trail
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: window.innerWidth < 768 ? 600 : 1000 } },
+                color: { value: ['#d1d5db', '#ffffff'] }, // Gradien abu-abu terang ke putih
+                shape: { 
+                    type: ['circle', 'star', 'polygon'], 
+                    stroke: { width: 0 }, 
+                    polygon: { nb_sides: 5 }
+                },
+                opacity: { 
+                    value: 0.5, 
+                    random: true, 
+                    anim: { enable: true, speed: 0.6, opacity_min: 0.2, sync: false }
+                },
+                size: { 
+                    value: 4, 
+                    random: true, 
+                    anim: { enable: true, speed: 1, size_min: 2, sync: false }
+                },
+                line_linked: { 
+                    enable: true, 
+                    distance: 80, 
+                    color: '#d1d5db', 
+                    opacity: 0.15, 
+                    width: 1.5
+                },
+                move: { 
+                    enable:  true, 
+                    speed: 0.4, 
+                    direction: 'top', 
+                    random: true, // Variasi rotasi acak
+                    straight: false, 
+                    out_mode: 'out', 
+                    bounce: false,
+                    attract: { enable: true, rotateX: 3000, rotateY: 4000 } // Rotasi 3D lebih cepat
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { 
+                    onhover: { enable: true, mode: 'bubble' }, 
+                    onclick: { enable: true, mode: 'repulse' }, 
+                    resize: true 
+                },
+                modes: { 
+                    bubble: { distance: 100, size: 8, duration: 0.4, opacity: 0.5, speed: 2 },
+                    repulse: { distance: 150, duration: 0.6 }
+                }
+            },
+            retina_detect: true
+        });
+
         // Smooth scrolling untuk navigasi
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
