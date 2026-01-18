@@ -94,7 +94,7 @@
             <h2 class="text-2xl md:text-3xl text-neon mb-6">Portofolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="card p-8">
-                    <h3 class="text-xl text-white">Project: Indolands</h3>
+                    <h3 class="text-xl text-white">Project: Indolands (DISCONTINUED)</h3>
                     <p class="text-secondary mt-3">Indolands merupakan project game yang mengusung tema Roleplay yang didalamnya terdapat Currency System, Job System, Faction System dan masih banyak lagi.</p>
                     <a href="#" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
                 </div>
@@ -103,7 +103,26 @@
                     <p class="text-secondary mt-3">Game konser untuk Perform Tenxi di Roblox, Didalamnya terdapat Quest System, Leveling & Exp System, Hunger & Thirst System, Overhead System, VIP System dan masih banyak lagi.</p>
                     <a href="https://www.youtube.com/watch?v=CdL_3rvVSHo" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
                 </div>
-                <!-- Tambahkan lebih banyak kartu portofolio di sini -->
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project: NES x Somethinc</h3>
+                    <p class="text-secondary mt-3">Project ini adalah project Brand Collaboration NES dan Somethinc yang dimana terdapat NPC Dialog System, Complete Quest System, Interactive UI Dialog System dan beberapa System lainnya.</p>
+                    <a href="https://www.youtube.com/watch?v=ZyACcDxgAao" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project: Warung Madura Simulator</h3>
+                    <p class="text-secondary mt-3">Warung Madura Simulator adalah project yang didalamnya kita (player) menjadi tukang warung asli yang dimana pelanggannya berupa NPC, di Project ini tergolong Advanced Project menggunakan Smart AI/NPC Pathfinder, Placement System, Plot Claimable System, Plot Upgradeable System, Stock System, Currency System, Grab & Hold System, AI/NPC Request Product, AI/NPC Buy Product, dan masih banyak lagi.</p>
+                    <a href="https://www.youtube.com/watch?v=ZyACcDxgAao" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project: NES x ExtraJoss</h3>
+                    <p class="text-secondary mt-3">Project ini adalah project Brand Collaboration NES dan ExtraJoss yang dimana terdapat Complete Quest System, Voucher Redeem System, Airdrop System, Mini Event System, Ability Tools and Refill System, Points System, Collecting Brand Item System, Convert Points to UGC System, dan masih banyak lagi.</p>
+                    <a href="https://drive.google.com/drive/folders/1Xw3D45lGBpyDeBz77YoNC7TZIsQ_h1ab?usp=sharing" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl text-white">Project: Cleaning Service Horor (Anomalies)</h3>
+                    <p class="text-secondary mt-3">Cleaning Service Horor adalah project yang didalamnya kita (player) menjadi seorang Cleaning Service di suatu Apartement, Project ini juga merupakan Advanced Project yang didalamnya terdapat Customize FPS Interactable System, Interactable Objects System, Anomalies/NPC Pathfinding System, Leveling System, dan masih banyak lagi.</p>
+                    <a href="https://drive.google.com/drive/folders/11zhGnFfrmbeviynxZSKPP8Dhp7riF8P8?usp=sharing" class="mt-4 inline-block btn-neon">Lihat Pastwork</a>
+                </div>
             </div>
         </section>
 
@@ -125,11 +144,10 @@
     </footer>
 
     <script>
-        // Inisialisasi particles.js dengan rotasi 3D lanjutan, gradien, dan trail
         particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: window.innerWidth < 768 ? 600 : 1000 } },
-                color: { value: ['#d1d5db', '#ffffff'] }, // Gradien abu-abu terang ke putih
+                color: { value: ['#d1d5db', '#ffffff'] }, 
                 shape: { 
                     type: ['circle', 'star', 'polygon'], 
                     stroke: { width: 0 }, 
@@ -156,11 +174,11 @@
                     enable:  true, 
                     speed: 0.4, 
                     direction: 'top', 
-                    random: true, // Variasi rotasi acak
+                    random: true, 
                     straight: false, 
                     out_mode: 'out', 
                     bounce: false,
-                    attract: { enable: true, rotateX: 3000, rotateY: 4000 } // Rotasi 3D lebih cepat
+                    attract: { enable: true, rotateX: 3000, rotateY: 4000 } 
                 }
             },
             interactivity: {
@@ -178,7 +196,6 @@
             retina_detect: true
         });
 
-        // Smooth scrolling untuk navigasi
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -188,7 +205,6 @@
             });
         });
 
-        // Animasi saat scroll untuk visibilitas kartu
         window.addEventListener('scroll', () => {
             document.querySelectorAll('.card').forEach(card => {
                 const rect = card.getBoundingClientRect();
